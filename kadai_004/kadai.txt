@@ -1,0 +1,28 @@
+miyazakiharuna@shun-Air ~ % mkdir git_challenge
+miyazakiharuna@shun-Air ~ % cd git_challenge
+miyazakiharuna@shun-Air git_challenge % git init
+Initialized empty Git repository in /Users/miyazakiharuna/git_challenge/.git/
+miyazakiharuna@shun-Air git_challenge % touch hello_world.txt
+miyazakiharuna@shun-Air git_challenge % echo Hello,world! > hello_world.txt
+miyazakiharuna@shun-Air git_challenge % git add .
+miyazakiharuna@shun-Air git_challenge % git commit -m hello_world.txtを追加
+[main (root-commit) bb975e4] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+miyazakiharuna@shun-Air git_challenge % echo こんにちは、世界！ >> hello_world.txt
+miyazakiharuna@shun-Air git_challenge % git add .
+miyazakiharuna@shun-Air git_challenge % git commit -m 日本語訳を追記
+[main 4ca1e6d] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+miyazakiharuna@shun-Air git_challenge % git log
+commit 4ca1e6d0ae643e4b02b3d73df9cc3a4093cca6e4 (HEAD -> main)
+Author: haruna-miyazaki <haruna2866@gmail.com>
+Date:   Mon Mar 4 19:31:44 2024 +0900
+
+    日本語訳を追記
+
+commit bb975e406c3c5ce567ec009eca713bf922e46576
+Author: haruna-miyazaki <haruna2866@gmail.com>
+Date:   Mon Mar 4 19:30:34 2024 +0900
+
+    hello_world.txtを追加
